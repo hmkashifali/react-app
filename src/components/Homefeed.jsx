@@ -38,26 +38,7 @@ function Homefeed() {
             <span className='action add-feed'></span>
           </div>
         </div>
-        <div className='live-preview-dd'>
-          <span className='icon'></span>
-          <span className='title'> Live Preview </span>
-
-          <div className='dropdown'>
-            <div className='dropdown-item'>
-              <div className='feed-item'>
-                <i className='feed-icon call-to-action'></i>
-                <span className='title'>Call to Action</span>
-              </div>
-            </div>
-
-            <div className='dropdown-item'>
-              <div className='feed-item'>
-                <i className='feed-icon todo'></i>
-                <span className='title'>Todo</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        { livePreviewDropdown() }
 
         <div className='hr-line'></div>
 
@@ -81,6 +62,31 @@ function Homefeed() {
         <section className='preview-section'>
           <PreviewDevice feedItems={feedItems} />
         </section>
+      </div>
+    </div>
+  );
+}
+
+let livePreviewDropdown = () => {
+  return (
+    <div className='live-preview-dd'>
+      <span className='icon'></span>
+      <span className='title'> Live Preview </span>
+
+      <div className='dropdown'>
+        <div className='dropdown-item'>
+          <div className='feed-item'>
+            <i className='feed-icon call-to-action'></i>
+            <span className='title'>Call to Action</span>
+          </div>
+        </div>
+
+        <div className='dropdown-item'>
+          <div className='feed-item'>
+            <i className='feed-icon todo'></i>
+            <span className='title'>Todo</span>
+          </div>
+        </div>
       </div>
     </div>
   );
