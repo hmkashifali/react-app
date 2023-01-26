@@ -1,0 +1,160 @@
+// @import url('https://use.fontawesome.com/releases/v5.7.0/css/all.css');
+// @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+$bottom-navbar-height: 70.53px;
+.Homefeed {
+  position: absolute;
+  left: 86px;
+  top: 0px;
+  bottom: 0px;
+  $left-pane-width: 357px;
+  .left-pane{
+    width: $left-pane-width;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+    padding: 60px 24px 0 24px;
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding-left: 16px;
+      .icon {
+        margin-right: 9px;
+        margin: 3px 9px 0 0;
+        &::before {
+          content: url('../assets/icons/mobile.svg');
+        }
+      }
+      .title {
+        // font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 34px;
+
+        color: #222224;
+      }
+      .actions {
+        margin-left: auto;
+
+        .action {
+          text-align: center;
+          padding: 9px 12px;
+          background: #FAFAFA;
+          border-radius: 100px;
+
+          font-family: 'SF Pro Display';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+          color: #222224;
+          &.add-feed::before {
+            content: url('../assets/icons/plus.svg');
+          }
+        }
+      }
+    }
+
+    .live-preview-dd {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 16px;
+      margin-top: 32px;
+      margin-bottom: 16px;
+
+      background: #ECEDF0;
+      border-radius: 12px;
+      .icon {
+        margin-right: 16px;
+        &::before {
+          content: url('../assets/icons/mobile-colored.svg');
+        }
+      }
+      .title {
+        // font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      .dropdown {
+        box-sizing: border-box;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px;
+
+        position: absolute;
+        width: 285px;
+        right: -248px;
+        top: -20px;
+
+        background: #FFFFFF;
+
+        border: 2px solid #ECEDF0;
+
+        box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.04), 0px 5px 10px rgba(0, 0, 0, 0.12);
+        border-radius: 14px;
+        .dropdown-item {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 9px 8px 9px 16px;
+
+          border-radius: 8px;
+          .feed-item {
+            .feed-icon {
+              width: 20px;
+              height: 20px;
+            }
+            .title {
+              // font-family: 'Inter';
+              margin-left: 12px;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 24px;
+              color: #4B4B4D;
+            }
+          }
+        }
+      }
+      &:hover .dropdown{
+        display: flex;
+      }
+    }
+
+    .hr-line {
+      border: 1px solid #ECEDF0;
+    }
+    .feed-items {
+      margin-top: 16px;
+
+      .feed-item {
+        padding: 16px;
+        background: #FFFFFF;
+        border-radius: 12px;
+        .icon {
+          display: inline-block;
+        }
+        .title {
+          margin-left: 16px;
+          // font-family: 'Inter';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+
+  .right-pane {
+    .feed-sorting {
+      padding: 125px 20px 20px 40px;
+      width: 392px;
+    }
+  }
+}

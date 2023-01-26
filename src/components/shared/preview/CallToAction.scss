@@ -1,0 +1,31 @@
+.call-to-action-preview {
+  background: #FFFFFF;
+  box-shadow: 0px 1.70149px 5.10448px rgba(0, 0, 0, 0.06);
+  border-radius: 13.6119px;
+  overflow: hidden;
+  .header-img {
+    width: 285px;
+    height: 140px;
+    img {
+      width: 100%;
+    }
+  }
+  .footer {
+    padding: 19.37px 13.61px;
+    .button {
+      cursor: pointer;
+      width: 257.78px;
+      height: 34.03px;
+      // font-family: Inter;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #222224;
+      background: #FFFFFF;
+      border: 1.70149px solid #222224;
+      border-radius: 85.0746px;
+    }
+  }
+}

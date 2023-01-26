@@ -1,0 +1,27 @@
+.dummy-message-row {
+  display: flex;
+  margin-top: 19.54px;
+  .avatar {
+    width: 39.09px;
+    height: 39.09px;
+    top: calc(50% - 39.09px/2 - 180.15px);
+    background: #ECEDF0;
+    border-radius: 50px;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 8.5px;
+    padding-top: 1px;
+    .title {
+      width: 93.47px;
+      height: 15.3px;
+      margin-bottom: 3.4px;
+    }
+    .message {
+      width: 169.95px;
+      height: 13.6px;
+    }
+  }
+}

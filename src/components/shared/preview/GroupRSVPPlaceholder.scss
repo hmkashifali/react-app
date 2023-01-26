@@ -1,0 +1,27 @@
+.dummy-rsvp-row {
+  display: flex;
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 14.5px;
+    .title {
+      width: 176.75px;
+      height: 15.3px;
+      margin-bottom: 6.8px;
+    }
+    .message {
+      width: 107.07px;
+      height: 13.6px;
+    }
+  }
+  .avatar {
+    margin-top: 13.6px;
+    margin-left: auto;
+    width: 62.88px;
+    height: 33.99px;
+    left: 254.93px;
+    background: #ECEDF0;
+    border-radius: 16.9953px;
+  }
+}

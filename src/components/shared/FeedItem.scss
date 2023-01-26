@@ -1,0 +1,75 @@
+.feed-item.editable {
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 12px 24px;
+  margin-bottom: 16px;
+
+  border: 1px solid #ECEDF0;
+  border-radius: 16px;
+  .sort-icon {
+    margin-right: 16px;
+    cursor: grab;
+    &::before {
+      content: url('../../assets/icons/menu-default.svg');
+    }
+  }
+  .title {
+    // font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 16px;
+  }
+  .actions {
+    margin-left: auto;
+    .action {
+      cursor: pointer;
+      margin-left: 16px;
+      font-family: 'SF Pro';
+      font-style: normal;
+      font-weight: 590;
+      font-size: 18px;
+      line-height: 21px;
+      color: #BDBDC1;
+      display: inline-block;
+
+      &.delete {
+        &::before {
+          content: url('../../assets/icons/trash-default.svg');
+        }
+      }
+
+      &.preview {
+        &.visible::before {
+          content: url('../../assets/icons/preview-default.svg');
+        }
+        &.hidden::before {
+          content: url('../../assets/icons/preview-hidden-default.svg');
+        }
+      }
+    }
+  }
+  &:hover {
+    .sort-icon::before {
+      content: url('../../assets/icons/menu-hovered.svg');
+    }
+    .actions {
+      .action {
+        &.delete::before {
+          content: url('../../assets/icons/trash-hovered.svg');
+        }
+
+        &.preview {
+          &.visible::before {
+            content: url('../../assets/icons/preview-hovered.svg');
+          }
+          &.hidden::before {
+            content: url('../../assets/icons/preview-hidden-hovered.svg');
+          }
+        }
+      }
+    }
+  }
+}

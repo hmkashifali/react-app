@@ -1,0 +1,22 @@
+.todo-preview {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+  margin-top: 13.64px;
+  background: #FFFFFF;
+  box-shadow: 0px 1.70149px 5.10448px rgba(0, 0, 0, 0.06);
+  border-radius: 13.6119px;
+  .icon::before {
+    content: url('../../../assets/icons/preview/circular-check.svg');
+  }
+  .title {
+    margin-left: 10px;
+    // font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.6119px;
+    line-height: 16px;
+    color: #222224;
+  }
+}
